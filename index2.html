@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<script>
+
+
+
+
+var i = 0;
+var term_i = 0;
+var Int = 0;
+
+var term = {
+	Canada: 5, 
+	Moscow: 10,
+	Minsk: 15,
+	Spain: 174,
+	Spain1: 25
+}
+ 
+
+//alert (typeof (term.Canada));
+// alert( (term.Canada + term.Moscow + term.Minsk + term.Spain)/4 );  // 6
+
+ for (var TERM in term) {
+  // значения ключей
+  // alert( term[TERM] );
+
+  term_i = term_i + Number(term[TERM]);
+  i++;
+
+/*   Int = Number(term[TERM]);
+ */ 
+  alert(TERM +' ' + term[TERM]);
+}
+
+alert('Среднеее значение температур всех стран =' + term_i/i); 
+/* alert(Int);
+ */ 
+
+
+function showMaxTerm(Canada, Moscow, Minsk, Spain, Spain1){
+
+    max = Math.max(Canada, Moscow, Minsk, Spain, Spain1);
+    return(max);
+}
+
+let result = showMaxTerm(5, 10, 15, 174, 25);
+alert( 'Максимальное значение температуры: ' + result ); 
+</script>
