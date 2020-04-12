@@ -1,14 +1,8 @@
 .menu{
-     display: flex;
-    justify-content: space-between;
-    margin-top: 200px; 
-    
-}
-/* #box{
     display: flex;
     justify-content: space-between;
-    margin-top: 200px;
-}  */
+}
+
 
 p{
     font-size: 36px;
@@ -19,9 +13,14 @@ p{
     display: none;
 }
 
-#box3{
-    display: inline-flex;
-    justify-content: center;
-    position: relative;
+.poiavlenie{
+    display: none!important;
+}
+
+
+.novi_flex{
+    display: flex;
+ 
+    justify-content: space-around;
 
 }
